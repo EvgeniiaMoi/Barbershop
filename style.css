@@ -1,0 +1,481 @@
+/*Base*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header .block1 {
+  clear: both;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline;
+}
+/*Layout*/
+header,
+footer {
+  width: 100%;
+  height: 10vh;
+}
+header a,
+footer a {
+  float: left;
+  padding-top: 1.5%;
+  padding-left: 5%;
+}
+header nav,
+footer nav {
+  font-size: 0.8rem;
+  float: right;
+  width: 40%;
+  margin-top: 1.5%;
+}
+@media (max-width: 1100px) {
+  header nav,
+  footer nav {
+    width: 60%;
+  }
+}
+@media (max-width: 750px) {
+  header nav,
+  footer nav {
+    font-size: .7rem;
+  }
+}
+@media (max-width: 650px) {
+  header a img,
+  footer a img {
+    width: 60%;
+    margin-top: 5%;
+  }
+  header nav,
+  footer nav {
+    font-size: .6rem;
+    margin-top: 2%;
+  }
+}
+@media (max-width: 575px) {
+  header a img,
+  footer a img {
+    width: 80%;
+    position: relative;
+    left: 25vh;
+  }
+  header nav,
+  footer nav {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  header a img,
+  footer a img {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+}
+header nav ul a {
+  color: #000;
+}
+.block1 {
+  clear: both;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('img/block1.jpg');
+  background-size: cover;
+}
+.block1 .title {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: #fff;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.block1 .title p {
+  text-transform: uppercase;
+}
+.block1 .title .header {
+  font-family: 'Cookie', cursive;
+  text-transform: none;
+  font-size: 7rem;
+  font-weight: bold;
+}
+@media (max-width: 650px) {
+  .block1 .title {
+    font-size: 2rem;
+  }
+  .block1 .title .header {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 450px) {
+  .block1 .title .header {
+    font-size: 3rem;
+  }
+}
+footer {
+  background: #212121;
+}
+footer nav ul a {
+  color: #fff;
+}
+#about {
+  margin: 5%;
+}
+#about div {
+  display: block;
+  float: left;
+  width: 33%;
+  padding-top: 5%;
+}
+#about .title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  width: 29%;
+}
+#about .title_min-width {
+  display: none;
+}
+#about .text {
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-bottom: 5%;
+}
+#about .column1 {
+  margin-right: 5%;
+}
+@media (max-width: 750px) {
+  #about .title {
+    font-size: 1.5rem;
+  }
+  #about .text {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 450px) {
+  #about div {
+    float: none;
+  }
+  #about .title {
+    display: none;
+  }
+  #about .title_min-width {
+    display: block;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  #about .text {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}
+.man_bow-tie {
+  clear: both;
+  margin-top: 5%;
+  background: url('img/block2.jpg') no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  margin-bottom: 5%;
+}
+.man_bow-tie .content {
+  position: absolute;
+  bottom: 50vh;
+  right: -7vh;
+  transform: rotate(270deg);
+}
+.man_bow-tie .content .text {
+  color: #fff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.man_bow-tie .content .line {
+  width: 10vh;
+  height: 2vh;
+  background-color: #ffdc19;
+}
+@media (max-width: 700px) {
+  .man_bow-tie .content .text {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .man_bow-tie {
+    height: 65vh;
+  }
+  .man_bow-tie .content {
+    transform: rotate(0deg);
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+  }
+  .man_bow-tie .content .text {
+    font-size: 2rem;
+  }
+}
+#services {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#services .list .item {
+  display: block;
+  width: 23%;
+  float: left;
+  font-size: 0.8rem;
+  margin-bottom: 5%;
+  max-height: 50vh;
+  overflow: auto;
+}
+#services .list .item .name {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+#services .list .item .name .price {
+  font-weight: bold;
+}
+#services .list .haircut,
+#services .list .shave,
+#services .list .beard {
+  margin-right: 2.6%;
+}
+@media (max-width: 675px) {
+  #services .list .item .name {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 450px) {
+  #services .list .item {
+    width: 45%;
+  }
+}
+#lookbook {
+  clear: both;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+}
+#lookbook h3 {
+  margin-bottom: 2%;
+}
+#lookbook .men {
+  margin-bottom: 5%;
+  height: 100vh;
+}
+#lookbook .man1,
+#lookbook .man2,
+#lookbook .man3,
+#lookbook .man4 {
+  float: left;
+}
+.man1, .man2, .man3, .man4 {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.man1:hover, .man2:hover, .man3:hover, .man4:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+#lookbook .man1 {
+  background: url('img/man.jpg') no-repeat;
+  background-size: cover;
+  width: 40%;
+  height: 100vh;
+    -webkit-transition: height 1s ease;
+     -moz-transition: height 1s ease;
+       -o-transition: height 1s ease;
+      -ms-transition: height 1s ease;
+          transition: height 1s ease;
+}
+#lookbook .man2 {
+  background: url('img/man1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 30%;
+  height: 50vh;
+  border: 0;
+}
+#lookbook .man3 {
+  background: url('img/man2.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 30%;
+  height: 50vh;
+}
+#lookbook .man4 {
+  background: url('img/man3.jpg') no-repeat;
+  background-size: cover;
+  width: 60%;
+  height: 50vh;
+}
+@media (max-width: 675px) {
+  #lookbook .man1 {
+    display: none;
+  }
+  #lookbook .man2 {
+    width: 50%;
+  }
+  #lookbook .man3 {
+    width: 50%;
+  }
+  #lookbook .man4 {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+}
+@media (max-width: 575px) {
+  #lookbook .man1 {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  #lookbook .man1,
+  #lookbook .man2,
+  #lookbook .man3,
+  #lookbook .man4 {
+    height: 70vh;
+  }
+  #lookbook .man2,
+  #lookbook .man3 {
+    width: 100%;
+  }
+}
+#reservation {
+  clear: both;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  height: auto;
+  font-family: serif;
+  font-size: 1rem;
+}
+#reservation .reservation-info .left {
+  width: 30%;
+  float: left;
+  height: 35vh;
+}
+#reservation .reservation-info .left input {
+  width: 90%;
+  border: 1px solid #dfdfdf;
+  padding: 3%;
+  margin-bottom: 5%;
+  outline: none;
+}
+#reservation .reservation-info .textarea {
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+#reservation .reservation-info .textarea textarea {
+  outline: none;
+  resize: none;
+  border-color: #dfdfdf;
+  padding: 3% 2%;
+  height: 35vh;
+  width: 117%;
+}
+#reservation .reservation-info:after {
+  clear: both;
+}
+#reservation .button {
+  color: #fff;
+  margin-bottom: 6%;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+#reservation .button input {
+  background-color: #ffdc19;
+  border: 1px solid #ffdc19;
+  padding: 1% 4%;
+  transition: background-color .5s;
+}
+#reservation .button input:hover {
+  background-color: #fff;
+  color: #ffdc19;
+}
+input.register:focus {
+    outline: none;
+}
+@media (max-width: 1100px) {
+  #reservation .left,
+  #reservation .textarea {
+    height: 30vh;
+  }
+  #reservation .textarea textarea {
+    height: 85%;
+  }
+}
+@media (max-width: 575px) {
+  #reservation .left,
+  #reservation .textarea {
+    height: 25vh;
+  }
+  #reservation .textarea textarea {
+    height: 85%;
+  }
+}
+@media (max-width: 450px) {
+  #reservation {
+    height: auto;
+  }
+  #reservation .reservation-info .left {
+    float: none;
+    width: 100%;
+    height: 20vh;
+  }
+  #reservation .reservation-info .left input {
+    width: 100%;
+  }
+  #reservation .reservation-info .textarea {
+    float: none;
+    height: 20vh;
+  }
+  #reservation .reservation-info .textarea textarea {
+    width: 100%;
+  }
+}
+#contacts iframe {
+  width: 100%;
+  -webkit-filter: grayscale(100%) brightness(95%);
+  /* Chrome, Safari, Opera */
+  filter: grayscale(100%) brightness(95%);
+}
+/*Moduls*/
+h3 {
+  text-transform: uppercase;
+  border-bottom: 2px solid #ffdc19;
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+  font-weight: normal;
+  font-family: 'Hammersmith One', sans-serif;
+}

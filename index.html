@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barbershop</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Nova+Slim' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One|Cookie' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+	<header>
+		<a class="logo" href="/">
+			<img src="img/bllogo.png" alt="logo">
+		</a>
+		<nav>
+			<ul>
+				<li> <a href="#about">About</a></li>
+				<li> <a href="#services">Services</a></li>
+				<li> <a href="#lookbook">Lookbook</a></li>
+				<li> <a href="#reservation">Reservation</a></li>
+				<li> <a href="#contacts">Contacts</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="block1 parallax" data-type="background" data-speed="2">
+		<img src="">
+			<div class="title">
+				<p>The coolest</p>
+				<p class="header">Barbershop</p>
+			</div>
+	</div>
+	
+	<div id="about">
+		<h3>About</h3>
+		<div class="title"> <img src="img/commas.png"> </br>We have the</br>best masters</br>in the world</div>
+		<div class="title_min-width"> <img src="img/commas.png"> We have the best masters in the world</div>
+		<div class="text column1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		<div class="text column2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	</div>
+
+	<div class="man_bow-tie  parallax" data-type="background" data-speed="7">
+		<div class="content">
+			<div class="text">Every single </br>detail matters</div>
+			<div class="line"></div>
+		</div>
+	</div>
+
+	<div id="services">
+		<h3>Services</h3>
+		<div class="list">
+			<div class="item haircut">
+				<p class="name">Haircut</br><span class="price">($10)</span></p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="item shave">
+				<p class="name">Shave</br><span class="price">($20)</span></p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="item beard">
+				<p class="name">Beard style</br><span class="price">($20)</span></p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="item special-hc">
+				<p class="name">Special haircut</br><span class="price">($30)</span></p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="lookbook">
+
+		<h3>Lookbook</h3>
+		<div class="men">
+			<div class="man1"></div>
+			<div class="man2"></div>
+			<div class="man3"></div>
+			<div class="man4"></div>
+		</div>
+	</div>
+
+	<div id="reservation">
+
+		<h3>Reservation</h3>
+		
+		<form class="reservation">
+		<div class="reservation-info">
+			<div class="left">
+
+				<div action="action_page.php" method="post" name="reservation">
+					<input type="text" name="name" class="name" placeholder="Full name">
+				</div>
+
+				<div action="action_page.php" method="post" name="reservation">
+					<input type="text" name="name" class="number" placeholder="Phone number">
+				</div>
+
+				<div>
+					<input type="email" name="email" class="email" placeholder="E-mail">
+				</div>
+
+				<div action="action_page.php" method="post" name="reservation">
+					<input type="text" name="date" class="date" placeholder="Date and time">
+				</div>
+			</div>
+			<div class="textarea">
+				<textarea name="comment" placeholder="Additional requirements"></textarea>
+			</div>
+		</div>
+			<div class="button">
+       			<input type="submit" value="RESERVE" class="register">
+    		</div>
+    	</form>
+	</div>
+	<div id="contacts">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.263035424709!2d24.03077231521274!3d49.837514979395515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add693369dbef%3A0x960cb6353857edf0!2sSolidol+Barbershop!5e0!3m2!1suk!2sua!4v1452071171274" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	<footer>
+		<a class="logo" href="/">
+			<img src="img/whlogo.png" alt="logo">
+		</a>
+		<nav>
+			<ul>
+				<li> <a href="#about">About</a></li>
+				<li> <a href="#services">Services</a></li>
+				<li> <a href="#lookbook">Lookbook</a></li>
+				<li> <a href="#reservation">Reservation</a></li>
+				<li> <a href="#contacts">Contacts</a></li>
+			</ul>
+		</nav>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
